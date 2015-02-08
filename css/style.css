@@ -1,0 +1,166 @@
+.no-margin {
+    margin: 0;
+}
+.paper-size-box {
+
+}
+.field-size {
+    width: 293px;
+    height: 600px;
+}
+.field-color {
+    width: 97px;
+    height: 600px;
+}
+.field-material {
+    width: 388px;
+    height: 350px;
+}
+.field-varnish {
+    width: 388px;
+    height: 150px;
+    margin-top: 15px;
+}
+.field-bends {
+    width: 178px;
+    height: 100px;
+}
+.field-quantity {
+    width: 178px;
+    height: 100px;
+}
+.field-history {
+    max-height: 430px;
+}
+.field-history-btn {
+    max-height: 370px;
+    overflow-y: auto;
+}
+.field-cost {
+
+}
+.format-paper {
+    border:1px solid #000;
+    background-color: #E1EEF5;
+    opacity: 1.0;
+    position: relative;
+}
+.inside-box-element-double {
+    position: relative;
+}
+.inside-box-element {
+    position: relative;
+    padding: 0 15px 15px 15px;
+}
+.left-block-position {
+    float: left;
+}
+.center-block-position {
+    position: absolute;
+    left: 150px;
+    padding-left: 15px;
+}
+.right-block-position {
+    float: right;
+    padding-right: 30px;
+}
+
+[format-paper-size-position="1"]{
+    left:0;
+    top:45px;
+    width:267px;
+    height:420px;
+
+ }
+[format-paper-size-position="2"]{
+    left:0;
+    top:102px;
+    width:200px;
+    height:298px;
+
+}
+[format-paper-size-position="3"]{
+    left:0;
+    top:68px;
+    width:150px;
+    height:210px;
+
+}
+[format-paper-size-position="4"]{
+    left:0;
+    top:40px;
+    width:105px;
+    height:150px;
+
+}
+[format-paper-size-position="5"]{
+    left:0;
+    top:24px;
+    width:75px;
+    height:106px;
+
+}
+[format-paper-size-position="6"]{
+    left:0;
+    top:11px;
+    width:52px;
+    height:75px;
+
+}
+
+.format-label {
+    font-size: 14px;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    text-align:left;
+    color:#000000;
+    position: relative;
+}
+
+[format-paper-size-label="1"]{
+    left:15px;
+    top:6px;
+    width:24.200000000000003px;
+    height:21px;
+    z-index:6;
+}
+[format-paper-size-label="2"]{
+    left:15px;
+    top:10px;
+    width:20.900000000000002px;
+    height:21px;
+    z-index:8;
+}
+[format-paper-size-label="3"]{
+    left:15px;
+    top:12px;
+    width:25.3px;
+    height:21px;
+    z-index:10;
+}
+[format-paper-size-label="4"]{
+    left:15px;
+    top:8px;
+    width:24.200000000000003px;
+    height:21px;
+    z-index:12;
+}
+[format-paper-size-label="5"]{
+    left:15px;
+    top:6px;
+    width:23.1px;
+    height:21px;
+    z-index:14;
+}
+[format-paper-size-label="6"]{
+    left:15px;
+    top:5px;
+    width:24.200000000000003px;
+    height:21px;
+    z-index:16;
+}
+/* Bootstrap */
+.radio {
+    padding-left: 20px;
+}

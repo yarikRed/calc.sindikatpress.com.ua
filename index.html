@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <title>calc</title>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+    <script type="text/javascript" src="js/calc.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="tabbable">
+
+    <ul class="nav nav-tabs" data-tabs="tabs" role="tablist" id="mainTab">
+
+        <li class="active"><a href="#tab1" data-toggle="tab">Листовки буклеты флаера плакаты</a></li>
+        <li><a href="#tab2" data-toggle="tab">Книги</a></li>
+        <li><a href="#tab3" data-toggle="tab">Журналы</a></li>
+        <li><a href="#tab4" data-toggle="tab">Газеты</a></li>
+        <li><a href="#tab5" data-toggle="tab">Папки</a></li>
+        <li><a href="#tab6" data-toggle="tab">Календари</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+        <div class="tab-pane fade in active" id="tab1">
+            <div class="row">
+                <div class="col-md-3">
+                    <fieldset class="field-size">
+                    <legend>Размер</legend>
+                        <div class="tabbable">
+                            <ul class="nav nav-pills" data-tabs="tabs">
+                                <li class="active"><a href="#aformat" data-toggle="tab">A формат</a></li>
+                                <li><a href="#bformat" data-toggle="tab">В формат</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="aformat">
+                                    <div class="paper-size-box">
+                                        <div class="format-paper" format-paper-size-position="1" id="sizeA1">
+                                            <span class="format-label" format-paper-size-label="1">A1</span>
+                                            <div div class="format-paper" format-paper-size-position="2" id="sizeA2">
+                                                <span class="format-label" format-paper-size-label="2">A2</span>
+                                                <div div class="format-paper" format-paper-size-position="3" id="sizeA3">
+                                                    <span class="format-label" format-paper-size-label="3">A3</span>
+                                                    <div div class="format-paper" format-paper-size-position="4" id="sizeA4">
+                                                        <span class="format-label" format-paper-size-label="4">A4</span>
+                                                        <div div class="format-paper" format-paper-size-position="5" id="sizeA5">
+                                                            <span class="format-label" format-paper-size-label="5">A5</span>
+                                                            <div div class="format-paper" format-paper-size-position="6" id="sizeA6">
+                                                                <span class="format-label" format-paper-size-label="6">A6</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="bformat">
+                                    <div class="paper-size-box">
+                                        <div class="format-paper" format-paper-size-position="1">
+                                            <span class="format-label" format-paper-size-label="1">B1</span>
+                                            <div div class="format-paper" format-paper-size-position="2">
+                                                <span class="format-label" format-paper-size-label="2">B2</span>
+                                                <div div class="format-paper" format-paper-size-position="3">
+                                                    <span class="format-label" format-paper-size-label="3">B3</span>
+                                                    <div div class="format-paper" format-paper-size-position="4">
+                                                        <span class="format-label" format-paper-size-label="4">B4</span>
+                                                        <div div class="format-paper" format-paper-size-position="5">
+                                                            <span class="format-label" format-paper-size-label="5">B5</span>
+                                                            <div div class="format-paper" format-paper-size-position="6">
+                                                                <span class="format-label" format-paper-size-label="6">B6</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </fieldset>
+                </div>
+                <div class="col-md-1">
+                    <fieldset class="field-color">
+                    <legend>Цвет</legend>
+                    <div class="inside-box-element">
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 1+0
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 1+1
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 2+0
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 2+1
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 2+2
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 3+0
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 3+1
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 3+2
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 3+3
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 4+0
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 4+1
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 4+2
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 4+3
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 4+4
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 5+0
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 5+1
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 5+2
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 5+3
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 5+4
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="color-scheme"> 5+5
+                        </label>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="col-md-4">
+                    <fieldset class="field-material">
+                    <legend>Материал</legend>
+                    <div class="inside-box-element">
+                        <div class="left-block-position">
+                            <h4 class="no-margin"><span class="label selectable label-default ">Офсетная бумага</span></h4>
+                            <label class="radio selectable" >
+                                <input type="radio" name="material"> 80 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 100 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 120 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 160 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 200 г/м <sup>2</sup>
+                            </label>
+                        </div>
+                        <div class="center-block-position">
+                            <h4 class="no-margin"><span class="label label-default selectable">Глянцевая</span></h4>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 80 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 90 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 100 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 115 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 130 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 150 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 170 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 200 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 250 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 300 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio selectable">
+                                <input type="radio" name="material"> 350 г/м <sup>2</sup>
+                            </label>
+                        </div>
+                        <div class="right-block-position">
+                            <h4 class="no-margin"><span class="label label-default">Матовая</span></h4>
+                            <label class="radio">
+                                <input type="radio" name="material"> 80 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 90 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 100 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 115 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 130 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 150 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 170 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 200 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 250 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 300 г/м <sup>2</sup>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="material"> 350 г/м <sup>2</sup>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                    <fieldset class="field-varnish">
+                        <legend>Лакировка</legend>
+                        <div class="inside-box-element">
+                            <div class="left-block-position">
+                                <h4><span class="label label-default">Защитная лакировка</span></h4>
+                                <label class="radio">
+                                    <input type="radio" name="varnish"> 1+0
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="varnish"> 1+1
+                                </label>
+                            </div>
+                            <div class="right-block-position">
+                                <h4><span class="label label-default">УФ лакировка</span></h4>
+                                <label class="radio">
+                                    <input type="radio" name="varnish"> 1+0
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="varnish"> 1+1
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="inside-box-element-double">
+                        <fieldset class="field-bends left-block-position">
+                        <legend>Кол–во сгибов</legend>
+                            <input type="text" placeholder="0">
+                        </fieldset>
+                    <fieldset class="field-quantity ">
+                        <legend>Тираж</legend>
+                            <input type="text" placeholder="0" required>
+                    </fieldset>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <fieldset class="field-cost">
+                    <legend>Стоимость печати</legend>
+                    <div class="inside-box-element">
+                        <div>
+                            <span class="badge badge-success" style="margin-top: 8px" id="printCost">1000 грн</span>
+                            <div style="float: right"><button class="btn btn-default" onclick="calculation()">Рассчитать стоимость</button><br><br></div>
+                            <button class="btn btn-default btn-block">Сохранить результат в истории расчетов</button><br>
+                        </div>
+                    </div>
+                </fieldset>
+                    <fieldset class="field-history">
+                        <legend>История расчетов</legend>
+                        <div class="field-history-btn">
+                            <div class="alert alert-info" role="alert">
+                                <button type="button" class="close" data-dismiss="alert">
+                                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                </button>
+                                <span class="badge badge-success">1000 грн</span> А3, Цвет 3+1, Глянцевая 100 г/м2, 1000 шт, УФ лакировка 1+1<br><br>
+                                <button class="btn btn-primary">Отправить заказ</button>&nbsp;&nbsp; <button class="btn btn-success">Изменить заказ</button>
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <button type="button" class="close" data-dismiss="alert">
+                                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                </button>
+                                <span class="badge badge-success">1000 грн</span> А3, Цвет 3+1, Глянцевая 100 г/м2, 1000 шт, УФ лакировка 1+1<br><br>
+                                <button class="btn btn-primary">Отправить заказ</button>&nbsp;&nbsp; <button class="btn btn-success">Изменить заказ</button>
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <button type="button" class="close" data-dismiss="alert">
+                                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                </button>
+                                <span class="badge badge-success">1000 грн</span> А3, Цвет 3+1, Глянцевая 100 г/м2, 1000 шт, УФ лакировка 1+1<br><br>
+                                <button class="btn btn-primary">Отправить заказ</button>&nbsp;&nbsp; <button class="btn btn-success">Изменить заказ</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="tab2"><p>Книги</p></div>
+        <div class="tab-pane fade" id="tab3"><p>Журналы</p></div>
+        <div class="tab-pane fade" id="tab4"><p>Газеты</p></div>
+        <div class="tab-pane fade" id="tab5"><p>Папки</p></div>
+        <div class="tab-pane fade" id="tab6"><p>Календари</p></div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

@@ -8,17 +8,21 @@
     width: 293px;
     height: 600px;
 }
+.field-size-books {
+    width: 293px;
+    height: 430px;
+}
 .field-color {
     width: 97px;
     height: 600px;
 }
 .field-material {
-    width: 388px;
-    height: 350px;
+    width: 350px;
+    height: 300px;
 }
 .field-varnish {
-    width: 388px;
-    height: 150px;
+    width: 100%;
+/*    height: 180px;*/
     margin-top: 15px;
 }
 .field-bends {
@@ -57,14 +61,14 @@
 }
 .center-block-position {
     position: absolute;
-    left: 150px;
-    padding-left: 15px;
+    left: 120px;
+    padding-left: 0;
 }
 .right-block-position {
     float: right;
-    padding-right: 30px;
+    padding-right: 0;
 }
-
+/*
 [format-paper-size-position="1"]{
     left:0;
     top:45px;
@@ -103,6 +107,50 @@
 [format-paper-size-position="6"]{
     left:0;
     top:11px;
+    width:52px;
+    height:75px;
+
+}
+*/
+/* for 1-6 sizes*/
+.format-paper-size-position-1{
+    left:0;
+    top:45px;
+    width:267px;
+    height:420px;
+
+}
+.format-paper-size-position-2{
+    left:0;
+    top:-252px;
+    width:200px;
+    height:298px;
+
+}
+.format-paper-size-position-3{
+    left:0;
+    top:-461px;
+    width:150px;
+    height:210px;
+
+}
+.format-paper-size-position-4{
+    left:0;
+    top:-610px;
+    width:105px;
+    height:150px;
+
+}
+.format-paper-size-position-5{
+    left:0;
+    top:-715px;
+    width:75px;
+    height:106px;
+
+}
+.format-paper-size-position-6{
+    left:0;
+    top:-789px;
     width:52px;
     height:75px;
 
@@ -160,7 +208,105 @@
     height:21px;
     z-index:16;
 }
+
+/*for 3-7 sizes*/
+/*
+#aformat-books .format-paper-size-position-2{
+    left:0;
+    top:10px;
+    width:200px;
+    height:298px;
+
+}
+#aformat-books .format-paper-size-position-3{
+    left:0;
+    top:68px;
+    width:150px;
+    height:210px;
+
+}
+#aformat-books .format-paper-size-position-4{
+    left:0;
+    top:40px;
+    width:105px;
+    height:150px;
+
+}
+#aformat-books .format-paper-size-position-5{
+    left:0;
+    top:24px;
+    width:75px;
+    height:106px;
+
+}
+#aformat-books .format-paper-size-position-6{
+    left:0;
+    top:11px;
+    width:52px;
+    height:75px;
+
+}
+
+#aformat-books .format-label {
+    font-size: 14px;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    text-align:left;
+    color:#000000;
+    position: relative;
+}
+
+
+#aformat-books [format-paper-size-label="2"]{
+    left:15px;
+    top:10px;
+    width:20.900000000000002px;
+    height:21px;
+    z-index:8;
+}
+#aformat-books [format-paper-size-label="3"]{
+    left:15px;
+    top:12px;
+    width:25.3px;
+    height:21px;
+    z-index:10;
+}
+#aformat-books [format-paper-size-label="4"]{
+    left:15px;
+    top:8px;
+    width:24.200000000000003px;
+    height:21px;
+    z-index:12;
+}
+#aformat-books [format-paper-size-label="5"]{
+    left:15px;
+    top:6px;
+    width:23.1px;
+    height:21px;
+    z-index:14;
+}
+#aformat-books [format-paper-size-label="6"]{
+    left:15px;
+    top:5px;
+    width:24.200000000000003px;
+    height:21px;
+    z-index:16;
+}
+*/
+
 /* Bootstrap */
 .radio {
     padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .min-768 {
+        display: none;
+    }
+}
+@media (min-width: 767px) {
+    .for-mobile {
+        display: none;
+    }
 }

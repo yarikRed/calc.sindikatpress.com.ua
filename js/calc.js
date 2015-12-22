@@ -4,7 +4,7 @@
 var formPrice = 200;
 var discount = 1;
 var exchangeRates = 25;
-var paperPrice = 2800;
+var paperPrice = 20;
 
 var finalCost;
 var printCost;
@@ -22,51 +22,51 @@ var formatPage = "A4";
 
 switch (formatPage) {
     case "A1" :
-        quantity = numberPages
-        break
+        quantity = numberPages;
+        break;
     case "A2" :
-        quantity = numberPages / 2
-        break
+        quantity = numberPages / 2;
+        break;
     case "A3" :
-        quantity = numberPages / 4
-        break
+        quantity = numberPages / 4;
+        break;
     case "A4" :
-        quantity = numberPages / 8
-        break
+        quantity = numberPages / 8;
+        break;
     case "A5" :
-        quantity = numberPages / 16
-        break
+        quantity = numberPages / 16;
+        break;
     case "A6" :
-        quantity = numberPages / 32
-        break
+        quantity = numberPages / 32;
+        break;
     default:
-        alert("Выберите формат бумаги.")
-        break
+        alert("Выберите формат бумаги.");
+        break;
 }
 
 
 switch (numberColors) {
     case 1 :
-        baseCost = 25 * exchangeRates
-        remainPrice = 10 * exchangeRates
-        break
+        baseCost = 25 * exchangeRates;
+        remainPrice = 10 * exchangeRates;
+        break;
     case 2 :
-        baseCost = 50 * exchangeRates
-        remainPrice = 12 * exchangeRates
-        break
+        baseCost = 50 * exchangeRates;
+        remainPrice = 12 * exchangeRates;
+        break;
     case 3 :
-        baseCost = 70 * exchangeRates
-        remainPrice = 15 * exchangeRates
-        break
+        baseCost = 70 * exchangeRates;
+        remainPrice = 15 * exchangeRates;
+        break;
     case 4 :
-        baseCost = 80 * exchangeRates
-        remainPrice = 20 * exchangeRates
-        break
+        baseCost = 80 * exchangeRates;
+        remainPrice = 20 * exchangeRates;
+        break;
     default:
-        alert("Выберите цвеиность печати.");
-        break
+        alert("Выберите цветность печати.");
+        break;
 }
-materialCost = 500;
+materialCost = quantity * paperPrice;
 formCost = numberColors * formPrice;
 remainCost = (quantity - 1000)*remainPrice / 1000;
 printCost = baseCost + remainCost;

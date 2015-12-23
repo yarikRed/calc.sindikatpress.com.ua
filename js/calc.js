@@ -66,7 +66,7 @@ switch (numberColors) {
         alert("Выберите цветность печати.");
         break;
 }
-materialCost = (quantity + 300) * paperPrice;
+materialCost = (1.03*quantity + 270) * paperPrice;
 formCost = numberColors * formPrice;
 remainCost = (quantity - 1000)*remainPrice / 1000;
 printCost = baseCost + remainCost;

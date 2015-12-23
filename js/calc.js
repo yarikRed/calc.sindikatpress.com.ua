@@ -4,7 +4,7 @@
 var formPrice = 200;
 var discount = 1;
 var exchangeRates = 25;
-var paperPrice = 20;
+var paperPrice = 1.1;
 
 var finalCost;
 var printCost;
@@ -17,7 +17,7 @@ var quantity;
 
 var numberColors = 4;
 var numberPages = 15000;
-var formatPage = "A4";
+var formatPage = "A1";
 
 
 switch (formatPage) {

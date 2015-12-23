@@ -3,7 +3,7 @@
  */
 var formPrice = 200;
 var discount = 1;
-var exchangeRates = 25;
+var exchangeRates = 22;
 var paperPrice = 1.1;
 
 var finalCost;

@@ -71,8 +71,8 @@
       <file leaf-file-name="calc.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/calc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6542811">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.13731825">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -356,7 +356,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450825125411</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="22.12.2015">
+      <created>1450871151333</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1450871151333</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1068,8 +1074,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/calc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6542811">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.13731825">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding />
         </state>
       </provider>

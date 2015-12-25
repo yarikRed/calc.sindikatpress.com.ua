@@ -310,3 +310,8 @@
         display: none;
     }
 }
+
+/* --- For calculation--- */
+.selected-format-paper {
+    background-color: #08c;
+}

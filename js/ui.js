@@ -5,8 +5,9 @@ $(document).ready(function () {
 
     //change colors format paper
     $('.format-paper').click(function (){
-        $('div.format-paper').css('background-color', '#E1EEF5');
-        $(this).css('background-color', '#08c');
+        $('div.format-paper').removeClass('selected-format-paper');
+       /* $(this).css('background-color', '#08c');*/
+        $(this).addClass('selected-format-paper');
        // alert(this);
         //return;
     });

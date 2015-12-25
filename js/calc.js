@@ -16,7 +16,7 @@ var remainCost;
 var remainPrice;
 var quantity;
 
-var numberColors = 4;
+var numberColors = document.querySelector('input[name = "color-scheme"]:checked').value; console.log("numberColors=", numberColors);
 var numberPages = document.getElementById("page-number-first-tab").value; console.log("numberPages=", numberPages);
 var formatPage = document.getElementsByClassName("selected-format-paper"); console.log("formatPage=", formatPage);
 
@@ -45,19 +45,19 @@ switch (formatPage[0].id) {
 }
 
 switch (numberColors) {
-    case 1 :
+    case "1" :
         baseCost = 25 * exchangeRates;
         remainPrice = 10 * exchangeRates;
         break;
-    case 2 :
+    case "2" :
         baseCost = 50 * exchangeRates;
         remainPrice = 12 * exchangeRates;
         break;
-    case 3 :
+    case "3" :
         baseCost = 70 * exchangeRates;
         remainPrice = 15 * exchangeRates;
         break;
-    case 4 :
+    case "4" :
         baseCost = 80 * exchangeRates;
         remainPrice = 20 * exchangeRates;
         break;

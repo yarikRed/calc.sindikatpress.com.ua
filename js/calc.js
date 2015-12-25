@@ -16,12 +16,9 @@ var remainCost;
 var remainPrice;
 var quantity;
 
-
 var numberColors = 4;
-//var numberPages = 15000;
 var numberPages = document.getElementById("page-number-first-tab").value; console.log("numberPages=", numberPages);
 var formatPage = document.getElementsByClassName("selected-format-paper"); console.log("formatPage=", formatPage);
-
 
 switch (formatPage[0].id) {
     case "A1" :
@@ -47,7 +44,6 @@ switch (formatPage[0].id) {
         break;
 }
 
-
 switch (numberColors) {
     case 1 :
         baseCost = 25 * exchangeRates;
@@ -69,11 +65,11 @@ switch (numberColors) {
         alert("Выберите цветность печати.");
         break;
 }
-materialCost = (1.03*quantity + 270) * paperPrice; console.log("materialCost=", materialCost);
-formCost = numberColors * formPrice; console.log("formCost=", formCost);
-remainCost = (quantity - 1000)*remainPrice / 1000; console.log("remainCost=", remainCost);
-printCost = baseCost + remainCost; console.log("printCost=", printCost);
-finalCost = materialCost + formCost + printCost * discount; console.log("finalCost=", finalCost);
+    materialCost = (1.03*quantity + 270) * paperPrice; console.log("materialCost=", materialCost);
+    formCost = numberColors * formPrice; console.log("formCost=", formCost);
+    remainCost = (quantity - 1000)*remainPrice / 1000; console.log("remainCost=", remainCost);
+    printCost = baseCost + remainCost; console.log("printCost=", printCost);
+    finalCost = materialCost + formCost + printCost * discount; console.log("finalCost=", finalCost);
 
     document.getElementById("printCost").childNodes[0].nodeValue = finalCost + " грн";
 }

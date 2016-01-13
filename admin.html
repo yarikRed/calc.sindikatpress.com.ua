@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Calculator admin page</title>
@@ -10,6 +10,7 @@
 
 </head>
 <body>
+<form action="save-new-data.php" method="get">
     <div class="admin-container">
         <div class="col-md-3">
             <div class="page-header">
@@ -17,17 +18,17 @@
             </div>
             <div class="input-group">
                 <span class="input-group-addon">Стоимость формы</span>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="formPrice">
                 <span class="input-group-addon">грн.</span>
             </div><br>
             <div class="input-group">
                 <span class="input-group-addon">Курс доллара $</span>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="exchangeRates">
                 <span class="input-group-addon">грн.</span>
             </div><br>
             <div class="input-group">
                 <span class="input-group-addon">Скидка</span>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="discount">
                 <span class="input-group-addon">%</span>
             </div><br>
         </div>
@@ -41,7 +42,7 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">45 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceGazetka45">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="page-header">
@@ -49,27 +50,27 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">55 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceOfset55">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">60 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceOfset60">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">65 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceOfset65">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">70 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceOfset70">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">80 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceOfset80">
                     <span class="input-group-addon">грн</span>
                 </div>
             </div>
@@ -79,42 +80,42 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">&nbsp;&nbsp;65 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceMelovka65">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">&nbsp;&nbsp;70 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceMelovka70">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">&nbsp;&nbsp;80 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceMelovka80">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">&nbsp;&nbsp;90 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceMelovka90">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">115 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceMelovka115">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">130 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceMelovka130">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">150 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceMelovka150">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">170 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceMelovka170">
                     <span class="input-group-addon">грн</span>
                 </div>
             </div>
@@ -124,12 +125,12 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">52 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceLegkomelovka52">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">60 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceLegkomelovka60">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="page-header">
@@ -137,27 +138,27 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">&nbsp;&nbsp;200 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceKarton200">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">&nbsp;&nbsp;250 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceKarton250">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">&nbsp;&nbsp;300 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceKarton300">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">&nbsp;&nbsp;350 г/м <sup>2</sup></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="paperPriceKarton350">
                     <span class="input-group-addon">грн</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">Рафлатак</span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="raflatak">
                     <span class="input-group-addon">грн</span>
                 </div>
             </div>
@@ -165,6 +166,6 @@
         <button type="reset" class="btn btn-warning">Отменить изменения</button>
         <button type="submit" class="btn btn-danger">Сохранить изменения</button>
     </div>
-
+</form>
 </body>
 </html>

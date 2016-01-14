@@ -16,9 +16,9 @@ var remainCost;
 var remainPrice;
 var quantity;
 
-var numberColors = document.querySelector('input[name = "color-scheme"]:checked').value; console.log("numberColors=", numberColors);
-var numberPages = document.getElementById("page-number-first-tab").value; console.log("numberPages=", numberPages);
-var formatPage = document.getElementsByClassName("selected-format-paper"); console.log("formatPage=", formatPage);
+var numberColors = document.querySelector('input[name = "color-scheme"]:checked').value;
+var numberPages = document.getElementById("page-number-first-tab").value;
+var formatPage = document.getElementsByClassName("selected-format-paper");
 
 switch (formatPage[0].id) {
     case "A1" :

@@ -5,9 +5,9 @@
     <title>calc</title>
 
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <fieldset class="field-size">
-                    <legend>Размер</legend>
+                        <legend>Размер <span class="unselected-items badge" id="label-format-selected">нет</span></legend>
                         <div class="tabbable">
                             <ul class="nav nav-pills" data-tabs="tabs">
                                 <li class="active"><a href="#aformat" data-toggle="tab">A формат</a></li>
@@ -94,95 +94,95 @@
                 </div>
                 <div class="col-md-1">
                     <fieldset class="field-color">
-                    <legend>Цвет</legend>
+                    <legend>Цвет <span class="unselected-items badge" id="label-color-selected">нет</span></legend>
                     <div class="inside-box-element">
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="1"> 1+0
+                            <input type="radio" name="color-scheme" value="1" class="color-number"> 1+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="1"> 1+1
+                            <input type="radio" name="color-scheme" value="1" class="color-number"> 1+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="2"> 2+0
+                            <input type="radio" name="color-scheme" value="2" class="color-number"> 2+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="2"> 2+1
+                            <input type="radio" name="color-scheme" value="2" class="color-number"> 2+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="2"> 2+2
+                            <input type="radio" name="color-scheme" value="2" class="color-number"> 2+2
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="3"> 3+0
+                            <input type="radio" name="color-scheme" value="3" class="color-number"> 3+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="3"> 3+1
+                            <input type="radio" name="color-scheme" value="3" class="color-number"> 3+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="3"> 3+2
+                            <input type="radio" name="color-scheme" value="3" class="color-number"> 3+2
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="3"> 3+3
+                            <input type="radio" name="color-scheme" value="3" class="color-number"> 3+3
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 4+0
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 4+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 4+1
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 4+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 4+2
+                            <input type="radio" name="color-scheme" value="4"  class="color-number"> 4+2
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 4+3
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 4+3
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 4+4
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 4+4
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 5+0
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 5+1
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 5+2
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+2
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 5+3
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+3
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 5+4
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+4
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"> 5+5
+                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+5
                         </label>
                     </div>
                 </fieldset>
                 </div>
                 <div class="col-md-4">
                     <fieldset class="field-material">
-                        <legend>Материал</legend>
+                        <legend>Материал <span class="unselected-items badge" id="label-material-selected">нет</span></legend>
                         <div class="inside-box-element">
                             <div class="left-block-position">
                                 <h4 class="no-margin"><span class="label label-default selectable">Газетка</span></h4>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 45 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Газетка 45 г/м" class="material-kind"> 45 г/м <sup>2</sup>
                                 </label>
                                 <h4 class="no-margin"><span class="label selectable label-default ">Офсет</span></h4>
                                 <label class="radio selectable" >
-                                    <input type="radio" name="material"> 55 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Офсет 55 г/м" class="material-kind"> 55 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 60 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Офсет 60 г/м" class="material-kind"> 60 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 65 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Офсет 65 г/м" class="material-kind"> 65 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 70 г/м <sup>2</sup>
+                                    <input type="radio" name="material"value="Офсет 70 г/м" class="material-kind"> 70 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 80 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Офсет 80 г/м" class="material-kind"> 80 г/м <sup>2</sup>
                                 </label>
 
 
@@ -191,97 +191,97 @@
 
                                 <h4 class="no-margin"><span class="label label-default selectable">Меловка</span></h4>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 65 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Меловка 65 г/м" class="material-kind"> 65 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 70 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Меловка 70 г/м" class="material-kind"> 70 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 80 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Меловка 80 г/м" class="material-kind"> 80 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 90 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Меловка 90 г/м" class="material-kind"> 90 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 115 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Меловка 115 г/м" class="material-kind"> 115 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 130 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Меловка 130 г/м" class="material-kind"> 130 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 150 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Меловка 150 г/м" class="material-kind"> 150 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 170 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Меловка 170 г/м" class="material-kind"> 170 г/м <sup>2</sup>
                                 </label>
 
                             </div>
                             <div class="right-block-position">
                                 <h4 class="no-margin"><span class="label label-default selectable">Легкомеловка</span></h4>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 52 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Легкомеловка 52 г/м" class="material-kind"> 52 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"> 60 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Легкомеловка 52 г/м" class="material-kind"> 60 г/м <sup>2</sup>
                                 </label>
                                 <h4 class="no-margin"><span class="label label-default">Картон</span></h4>
                                 <label class="radio">
-                                    <input type="radio" name="material"> 200 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Картон 200 г/м" class="material-kind"> 200 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="material"> 250 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Картон 250 г/м" class="material-kind"> 250 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="material"> 300 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Картон 300 г/м" class="material-kind"> 300 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="material"> 350 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Картон 350 г/м" class="material-kind"> 350 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="material"> Рафлатак
+                                    <input type="radio" name="material" value="Рафлатак" class="material-kind"> Рафлатак
                                 </label>
 
                             </div>
                         </div>
                     </fieldset>
                     <fieldset class="field-varnish">
-                        <legend>Дополнительная обработка</legend>
+                        <legend>Доп. обработка <span class="unselected-items badge" id="label-varnish-selected">нет</span></legend>
                         <div class="inside-box-element">
                             <div class="left-block-position">
                                 <h4><span class="label label-default">Ламинация</span></h4>
                                 <label class="radio">
-                                    <input type="radio" name="laminat"> глянцевая
+                                    <input type="radio" name="laminat" class="varnish" value="Ламинация глянец"> глянцевая
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="laminat"> матовая
+                                    <input type="radio" name="laminat" class="varnish" value="Ламинация мат"> матовая
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="laminat" checked> нет
+                                    <input type="radio" name="laminat" class="varnish" value="нет" checked> нет
                                 </label>
                             </div>
                             <div class="center-block-position">
                                 <h4><span class="label label-default">Защитный лак</span></h4>
                                 <label class="radio">
-                                    <input type="radio" name="varnish"> 1+0
+                                    <input type="radio" name="varnish" class="varnish" value="З.лак 1+0"> 1+0
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="varnish"> 1+1
+                                    <input type="radio" name="varnish" class="varnish" value="З.лак 1+1"> 1+1
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="varnish" checked> нет
+                                    <input type="radio" name="varnish" class="varnish"  value="нет" checked> нет
                                 </label>
 
                             </div>
                             <div class="right-block-position">
                                 <h4><span class="label label-default">УФ лак</span></h4>
                                 <label class="radio">
-                                    <input type="radio" name="uf-varnish"> 1+0
+                                    <input type="radio" name="uf-varnish" class="varnish" value="УФ лак 1+0"> 1+0
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="uf-varnish"> 1+1
+                                    <input type="radio" name="uf-varnish" class="varnish" value="УФ лак 1+1"> 1+1
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="uf-varnish" checked> нет
+                                    <input type="radio" name="uf-varnish" class="varnish" value="нет" checked> нет
                                 </label>
 
                             </div>
@@ -289,12 +289,12 @@
                     </fieldset>
                     <div class="inside-box-element-double">
                         <fieldset class="field-bends left-block-position">
-                        <legend>Кол–во сгибов</legend>
-                            <input type="text" placeholder="0">
+                        <legend>Кол–во сгибов <span class="unselected-items badge" id="label-bends-selected">0</span></legend>
+                            <input type="text" placeholder="0" id="bends-first-tab" class="bends" name="bends">
                         </fieldset>
                     <fieldset class="field-quantity ">
-                        <legend>Тираж</legend>
-                            <input type="text" placeholder="0" required id="page-number-first-tab">
+                        <legend>Тираж <span class="unselected-items badge" id="label-quantity-selected">0</span></legend>
+                            <input type="text" placeholder="0" required id="page-number-first-tab" class="quantity" name="quantity">
                     </fieldset>
                     </div>
                 </div>
@@ -305,7 +305,7 @@
                         <div>
                             <span class="badge badge-success" style="margin-top: 8px" id="printCost">0 грн</span>
                             <div style="float: right"><button class="btn btn-default" onclick="calculation()">Рассчитать стоимость</button><br><br></div>
-                            <button class="btn btn-default btn-block">Сохранить результат в истории расчетов</button><br>
+                            <button class="btn btn-default btn-block" onclick="saveResults()">Сохранить результат в истории расчетов</button><br>
                         </div>
                     </div>
                 </fieldset>

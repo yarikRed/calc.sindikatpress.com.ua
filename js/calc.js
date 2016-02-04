@@ -41,6 +41,7 @@ function calculation() {
 
             var actual_JSON = JSON.parse(response);
             console.log(actual_JSON);
+            alert(actual_JSON);
         });
 
     }

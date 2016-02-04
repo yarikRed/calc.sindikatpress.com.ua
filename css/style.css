@@ -208,7 +208,12 @@
     height:21px;
     z-index:16;
 }
-
+.unselected-items{
+    background-color: #ff2020;
+}
+.selected-items {
+    background-color:#0088cc;
+}
 /*for 3-7 sizes*/
 /*
 #aformat-books .format-paper-size-position-2{

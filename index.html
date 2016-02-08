@@ -6,10 +6,10 @@
 
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="js/ui.js"></script>
     <script type="text/javascript" src="js/calc.js"></script>
@@ -33,57 +33,57 @@
 
     <div class="tab-content">
 
-        <div class="tab-pane fade in active" id="tab1">
+        <div data-tab="main-tab" class="tab-pane fade in active" id="tab1">
             <div class="row">
                 <div class="col-md-3">
                     <fieldset class="field-size">
-                        <legend>Размер <span class="unselected-items badge" id="label-format-selected">нет</span></legend>
+                        <legend>Размер <span class="unselected-items badge" id="label-format-selected-tab1">нет</span></legend>
                         <div class="tabbable">
                             <ul class="nav nav-pills" data-tabs="tabs">
-                                <li class="active"><a href="#aformat" data-toggle="tab">A формат</a></li>
-                                <li><a href="#bformat" data-toggle="tab">В формат</a></li>
+                                <li class="active"><a href="#aformat-tab1" data-toggle="tab">A формат</a></li>
+                                <li><a href="#bformat-tab1" data-toggle="tab">В формат</a></li>
                             </ul>
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="aformat">
+                                <div class="tab-pane fade in active" id="aformat-tab1">
                                     <div class="paper-size-box">
-                                        <div class="format-paper format-paper-size-position-1"  id="A1" >
+                                        <div class="format-paper format-paper-size-position-1" data-format = "A1"  id="A1-tab1" >
                                             <span class="format-label" format-paper-size-label="1">A1</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-2"  id="A2">
+                                        <div class="format-paper format-paper-size-position-2" data-format = "A2" id="A2-tab1">
                                             <span class="format-label" format-paper-size-label="2">A2</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-3"  id="A3">
+                                        <div class="format-paper format-paper-size-position-3" data-format = "A3" id="A3-tab1">
                                             <span class="format-label" format-paper-size-label="3">A3</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-4"  id="A4">
+                                        <div class="format-paper format-paper-size-position-4" data-format = "A4" id="A4-tab1">
                                             <span class="format-label" format-paper-size-label="4">A4</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-5"  id="A5">
+                                        <div class="format-paper format-paper-size-position-5" data-format = "A5" id="A5-tab1">
                                             <span class="format-label" format-paper-size-label="5">A5</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-6"  id="A6">
+                                        <div class="format-paper format-paper-size-position-6" data-format = "A6" id="A6-tab1">
                                             <span class="format-label" format-paper-size-label="6">A6</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="bformat">
+                                <div class="tab-pane fade" id="bformat-tab1">
                                     <div class="paper-size-box">
-                                        <div class="format-paper format-paper-size-position-1">
+                                        <div class="format-paper format-paper-size-position-1" data-format = "B1" id="B1-tab1">
                                             <span class="format-label" format-paper-size-label="1">B1</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-2">
+                                        <div class="format-paper format-paper-size-position-2" data-format = "B2" id="B2-tab1">
                                             <span class="format-label" format-paper-size-label="2">B2</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-3">
+                                        <div class="format-paper format-paper-size-position-3" data-format = "B3" id="B3-tab1">
                                             <span class="format-label" format-paper-size-label="3">B3</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-4">
+                                        <div class="format-paper format-paper-size-position-4" data-format = "B4" id="B4-tab1">
                                             <span class="format-label" format-paper-size-label="4">B4</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-5">
+                                        <div class="format-paper format-paper-size-position-5" data-format = "B5" id="B5-tab1">
                                             <span class="format-label" format-paper-size-label="5">B5</span>
                                         </div>
-                                        <div class="format-paper format-paper-size-position-6">
+                                        <div class="format-paper format-paper-size-position-6" data-format = "B6" id="B6-tab1">
                                             <span class="format-label" format-paper-size-label="6">B6</span>
                                         </div>
                                     </div>
@@ -94,74 +94,74 @@
                 </div>
                 <div class="col-md-1">
                     <fieldset class="field-color">
-                    <legend>Цвет <span class="unselected-items badge" id="label-color-selected">нет</span></legend>
+                    <legend>Цвет <span class="unselected-items badge" id="label-color-selected-tab1">нет</span></legend>
                     <div class="inside-box-element">
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="1" class="color-number"> 1+0
+                            <input type="radio" name="color-scheme" value="1+0" class="color-number"> 1+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="1" class="color-number"> 1+1
+                            <input type="radio" name="color-scheme" value="1+1" class="color-number"> 1+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="2" class="color-number"> 2+0
+                            <input type="radio" name="color-scheme" value="2+0" class="color-number"> 2+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="2" class="color-number"> 2+1
+                            <input type="radio" name="color-scheme" value="2+1" class="color-number"> 2+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="2" class="color-number"> 2+2
+                            <input type="radio" name="color-scheme" value="2+2" class="color-number"> 2+2
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="3" class="color-number"> 3+0
+                            <input type="radio" name="color-scheme" value="3+0" class="color-number"> 3+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="3" class="color-number"> 3+1
+                            <input type="radio" name="color-scheme" value="3+1" class="color-number"> 3+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="3" class="color-number"> 3+2
+                            <input type="radio" name="color-scheme" value="3+2" class="color-number"> 3+2
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="3" class="color-number"> 3+3
+                            <input type="radio" name="color-scheme" value="3+3" class="color-number"> 3+3
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 4+0
+                            <input type="radio" name="color-scheme" value="4+0" class="color-number"> 4+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 4+1
+                            <input type="radio" name="color-scheme" value="4+1" class="color-number"> 4+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4"  class="color-number"> 4+2
+                            <input type="radio" name="color-scheme" value="4+2"  class="color-number"> 4+2
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 4+3
+                            <input type="radio" name="color-scheme" value="4+3" class="color-number"> 4+3
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 4+4
+                            <input type="radio" name="color-scheme" value="4+4" class="color-number"> 4+4
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+0
+                            <input type="radio" name="color-scheme" value="5+0" class="color-number"> 5+0
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+1
+                            <input type="radio" name="color-scheme" value="5+1" class="color-number"> 5+1
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+2
+                            <input type="radio" name="color-scheme" value="5+2" class="color-number"> 5+2
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+3
+                            <input type="radio" name="color-scheme" value="5+3" class="color-number"> 5+3
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+4
+                            <input type="radio" name="color-scheme" value="5+4" class="color-number"> 5+4
                         </label>
                         <label class="radio">
-                            <input type="radio" name="color-scheme" value="4" class="color-number"> 5+5
+                            <input type="radio" name="color-scheme" value="5+5" class="color-number"> 5+5
                         </label>
                     </div>
                 </fieldset>
                 </div>
                 <div class="col-md-4">
                     <fieldset class="field-material">
-                        <legend>Материал <span class="unselected-items badge" id="label-material-selected">нет</span></legend>
+                        <legend>Материал <span class="unselected-items badge" id="label-material-selected-tab1">нет</span></legend>
                         <div class="inside-box-element">
                             <div class="left-block-position">
                                 <h4 class="no-margin"><span class="label label-default selectable">Газетка</span></h4>
@@ -179,7 +179,7 @@
                                     <input type="radio" name="material" value="Офсет 65 г/м" class="material-kind"> 65 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
-                                    <input type="radio" name="material"value="Офсет 70 г/м" class="material-kind"> 70 г/м <sup>2</sup>
+                                    <input type="radio" name="material" value="Офсет 70 г/м" class="material-kind"> 70 г/м <sup>2</sup>
                                 </label>
                                 <label class="radio selectable">
                                     <input type="radio" name="material" value="Офсет 80 г/м" class="material-kind"> 80 г/м <sup>2</sup>
@@ -245,43 +245,43 @@
                         </div>
                     </fieldset>
                     <fieldset class="field-varnish">
-                        <legend>Доп. обработка <span class="unselected-items badge" id="label-varnish-selected">нет</span></legend>
+                        <legend>Доп. обработка <span class="unselected-items badge" id="label-varnish-selected-tab1">нет</span></legend>
                         <div class="inside-box-element">
                             <div class="left-block-position">
                                 <h4><span class="label label-default">Ламинация</span></h4>
                                 <label class="radio">
-                                    <input type="radio" name="laminat" class="varnish" value="Ламинация глянец"> глянцевая
+                                    <input type="radio" name="laminat" class="varnish" value="Лам.глянец "> глянцевая
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="laminat" class="varnish" value="Ламинация мат"> матовая
+                                    <input type="radio" name="laminat" class="varnish" value="Лам.мат "> матовая
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="laminat" class="varnish" value="нет" checked> нет
+                                    <input type="radio" name="laminat" class="varnish" value="" checked> нет
                                 </label>
                             </div>
                             <div class="center-block-position">
                                 <h4><span class="label label-default">Защитный лак</span></h4>
                                 <label class="radio">
-                                    <input type="radio" name="varnish" class="varnish" value="З.лак 1+0"> 1+0
+                                    <input type="radio" name="varnish" class="varnish" value="Лак 1+0 "> 1+0
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="varnish" class="varnish" value="З.лак 1+1"> 1+1
+                                    <input type="radio" name="varnish" class="varnish" value="Лак 1+1 "> 1+1
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="varnish" class="varnish"  value="нет" checked> нет
+                                    <input type="radio" name="varnish" class="varnish"  value="" checked> нет
                                 </label>
 
                             </div>
                             <div class="right-block-position">
                                 <h4><span class="label label-default">УФ лак</span></h4>
                                 <label class="radio">
-                                    <input type="radio" name="uf-varnish" class="varnish" value="УФ лак 1+0"> 1+0
+                                    <input type="radio" name="uf-varnish" class="varnish" value="УФлак 1+0"> 1+0
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="uf-varnish" class="varnish" value="УФ лак 1+1"> 1+1
+                                    <input type="radio" name="uf-varnish" class="varnish" value="УФлак 1+1"> 1+1
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="uf-varnish" class="varnish" value="нет" checked> нет
+                                    <input type="radio" name="uf-varnish" class="varnish" value="" checked> нет
                                 </label>
 
                             </div>
@@ -289,12 +289,12 @@
                     </fieldset>
                     <div class="inside-box-element-double">
                         <fieldset class="field-bends left-block-position">
-                        <legend>Кол–во сгибов <span class="unselected-items badge" id="label-bends-selected">0</span></legend>
-                            <input type="text" placeholder="0" id="bends-first-tab" class="bends" name="bends">
+                        <legend>Кол–во сгибов <span class="unselected-items badge" id="label-bends-selected-tab1">0</span></legend>
+                            <input type="text" placeholder="0" id="bends-first-tab-tab1" class="bends" name="bends">
                         </fieldset>
                     <fieldset class="field-quantity ">
-                        <legend>Тираж <span class="unselected-items badge" id="label-quantity-selected">0</span></legend>
-                            <input type="text" placeholder="0" required id="page-number-first-tab" class="quantity" name="quantity">
+                        <legend>Тираж <span class="unselected-items badge" id="label-quantity-selected-tab1">0</span></legend>
+                            <input type="text" placeholder="0" required id="page-number-first-tab-tab1" class="quantity" name="quantity">
                     </fieldset>
                     </div>
                 </div>
@@ -303,7 +303,7 @@
                     <legend>Стоимость печати</legend>
                     <div class="inside-box-element">
                         <div>
-                            <span class="badge badge-success" style="margin-top: 8px" id="printCost">0 грн</span>
+                            <span class="badge badge-success" style="margin-top: 8px" id="printCost-tab1">0 грн</span>
                             <div style="float: right"><button class="btn btn-default" onclick="calculation()">Рассчитать стоимость</button><br><br></div>
                             <button class="btn btn-default btn-block" onclick="saveResults()">Сохранить результат в истории расчетов</button><br>
                         </div>
@@ -312,37 +312,17 @@
                     <fieldset class="field-history">
                         <legend>История расчетов</legend>
                         <div class="field-history-btn">
-                            <div class="alert alert-info" role="alert">
-                                <button type="button" class="close" data-dismiss="alert">
-                                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                                </button>
-                                <span class="badge badge-success">1000 грн</span> А3, Цвет 3+1, Глянцевая 100 г/м2, 1000 шт, УФ лакировка 1+1<br><br>
-                                <button class="btn btn-primary">Отправить заказ</button>&nbsp;&nbsp; <button class="btn btn-success">Изменить заказ</button>
-                            </div>
-                            <div class="alert alert-info" role="alert">
-                                <button type="button" class="close" data-dismiss="alert">
-                                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                                </button>
-                                <span class="badge badge-success">1000 грн</span> А3, Цвет 3+1, Глянцевая 100 г/м2, 1000 шт, УФ лакировка 1+1<br><br>
-                                <button class="btn btn-primary">Отправить заказ</button>&nbsp;&nbsp; <button class="btn btn-success">Изменить заказ</button>
-                            </div>
-                            <div class="alert alert-info" role="alert">
-                                <button type="button" class="close" data-dismiss="alert">
-                                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                                </button>
-                                <span class="badge badge-success">1000 грн</span> А3, Цвет 3+1, Глянцевая 100 г/м2, 1000 шт, УФ лакировка 1+1<br><br>
-                                <button class="btn btn-primary">Отправить заказ</button>&nbsp;&nbsp; <button class="btn btn-success">Изменить заказ</button>
-                            </div>
+
                         </div>
                     </fieldset>
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="tab2">
+        <div data-tab="main-tab" class="tab-pane fade" id="tab2">
             <div class="row">
                 <div class="col-md-3">
                     <fieldset class="field-size-books">
-                        <legend>Размер</legend>
+                        <legend>Размер <span class="unselected-items badge" id="label-format-book-selected">нет</span></legend>
                         <div class="tabbable">
                             <ul class="nav nav-pills" data-tabs="tabs">
                                 <li class="active"><a href="#aformat-books" data-toggle="tab">A формат</a></li>
@@ -393,7 +373,7 @@
                 </div>
                 <div class="col-md-5">
                     <legend data-toggle="collapse" data-target="#block-collapse">
-                        <span class="glyphicon glyphicon-collapse-down"></span>  Блок
+                        <span class="glyphicon glyphicon-collapse-down"></span>  Блок  <span class="unselected-items badge" id="label-block-selected">нет</span>
                     </legend>
                     <div id = "block-collapse" class="panel-collapse collapse">
                         <div class="col-md-3">
@@ -542,7 +522,7 @@
                         </div>
                     </div>
                     <legend data-toggle="collapse" data-target="#cover-collapse">
-                        <span class="glyphicon glyphicon-collapse-down">  </span> Обложка
+                        <span class="glyphicon glyphicon-collapse-down">  </span> Обложка  <span class="unselected-items badge" id="label-cover-selected">нет</span>
                     </legend>
                     <div id="cover-collapse" class="panel-collapse collapse in">
                         <fieldset class="field-cover-books">
@@ -634,7 +614,7 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="tab3">
+        <div data-tab="main-tab" class="tab-pane fade" id="tab3">
             <div class="row">
                 <div class="col-md-3">
                     <fieldset class="field-size-magazines">
@@ -1042,7 +1022,7 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="tab4">
+        <div data-tab="main-tab" class="tab-pane fade" id="tab4">
             <div class="row">
                 <div class="col-md-3">
                     <fieldset class="field-size">
@@ -1197,11 +1177,11 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="tab5">
+        <div data-tab="main-tab" class="tab-pane fade" id="tab5">
             <p>Папки</p>
 
         </div>
-        <div class="tab-pane fade" id="tab6">
+        <div data-tab="main-tab" class="tab-pane fade" id="tab6">
             <p>Календари</p>
 
         </div>
